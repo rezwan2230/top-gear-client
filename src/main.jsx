@@ -13,6 +13,7 @@ import Login from './components/Login';
 import { ToastContainer } from 'react-toastify';
 import Registration from './components/Registration';
 import SingleBrand from './components/SingleBrand';
+import DetailsById from './components/DetailsById';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,12 @@ const router = createBrowserRouter([
         element : <SingleBrand></SingleBrand>,
         loader : ({params})=> fetch(`http://localhost:5000/${params.brandName}`)
       },
+      {
+        path : '/:id',
+        element : <DetailsById></DetailsById>,
+        loader : ({params})=> fetch(`http://localhost:5000/${params.id}`)
+      }
+
     ]
   },
 ]);
