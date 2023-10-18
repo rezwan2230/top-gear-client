@@ -12,6 +12,7 @@ import AddProducts from './components/AddProducts';
 import Login from './components/Login';
 import { ToastContainer } from 'react-toastify';
 import Registration from './components/Registration';
+import SingleBrand from './components/SingleBrand';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,11 @@ const router = createBrowserRouter([
       {
         path : '/register',
         element : <Registration></Registration> 
+      },
+      {
+        path : '/:brandName',
+        element : <SingleBrand></SingleBrand>,
+        loader : ({params})=> fetch(`http://localhost:5000/${params.brandName}`)
       },
     ]
   },
