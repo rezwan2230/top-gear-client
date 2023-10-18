@@ -1,13 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import Root from './layout/Root.jsx';
-import Home from './Home/Home.jsx';
+import AuthProvider from './provider/AuthProvider.jsx';
+import Home from './components/Home/Home.jsx';
+import AddProducts from './components/AddProducts';
+import Login from './components/Login';
+import { ToastContainer } from 'react-toastify';
+import Registration from './components/Registration';
 
 const router = createBrowserRouter([
   {
@@ -16,14 +20,30 @@ const router = createBrowserRouter([
     children : [
       {
         path : '/',
-        element : <Home></Home>
-      }
+        element : <Home></Home>,
+        loader : ()=> fetch('./public/brand.json')
+      },
+      {
+        path : '/addproducts',
+        element : <AddProducts></AddProducts>
+      },
+      {
+        path : '/login',
+        element : <Login></Login>
+      },
+      {
+        path : '/register',
+        element : <Registration></Registration> 
+      },
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
      <RouterProvider router={router} />
+    </AuthProvider>
+    <ToastContainer />
   </React.StrictMode>,
 )
