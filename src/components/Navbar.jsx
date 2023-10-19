@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import userPic from '../assets/user.png'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
 
@@ -43,7 +44,7 @@ const Navbar = () => {
                         {navLink}
                     </ul>
                 </div>
-                {/* <NavLink><img className="w-[100px] h-[50px]" src={logo} alt="" /></NavLink> */}
+                <NavLink><img className="w-[100px] h-[50px]" src={logo} alt="" /></NavLink>
             </div>
             <div className="navbar-center hidden lg:flex ">
                 <ul className="menu menu-horizontal px-1">

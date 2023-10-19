@@ -14,9 +14,7 @@ const Testimonial = () => {
                 <section className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-3">
                     <div className="p-8 border rounded-lg dark:border-gray-700">
                         <p className="leading-loose text-gray-500 dark:text-gray-400">
-                            “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
-                            tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
-                            aperiam dolorum, obcaecati corrupti aspernatur a.”.
+                            “People are drawn to us because of our unwavering commitment to excellence, personalized service, and trust we've cultivated through consistent reliability, innovation, and shared values. We're their top choice.”.
                         </p>
 
                         <div className="flex items-center mt-8 -mx-2">
@@ -31,9 +29,7 @@ const Testimonial = () => {
 
                     <div className="p-8 border rounded-lg dark:border-gray-700">
                         <p className="leading-loose text-gray-500 dark:text-gray-400">
-                            “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
-                            tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
-                            aperiam dolorum, obcaecati corrupti aspernatur a.”.
+                            “Incredibly impressed with your team work, especially their experience workers and knowledge. Their dedication and talent have had a significant positive impact on my car choose. Looking forward to their future contributions..”.
                         </p>
 
                         <div className="flex items-center mt-8 -mx-2">
@@ -47,10 +43,8 @@ const Testimonial = () => {
                     </div>
 
                     <div className="p-8 border rounded-lg dark:border-gray-700">
-                        <p className="leading-loose text-gray-500 dark:text-gray-400">
-                            “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
-                            tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
-                            aperiam dolorum, obcaecati corrupti aspernatur a.”.
+                        <p className="leading-loose text-gray-500 dark:text-gray-400 text-base">
+                        “Incredibly impressed with your team work, especially their experience workers and knowledge. Their dedication and talent have had a significant positive impact on my car choose. Looking forward to their future contributions..”.
                         </p>
 
                         <div className="flex items-center mt-8 -mx-2">

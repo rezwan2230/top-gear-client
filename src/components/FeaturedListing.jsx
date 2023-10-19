@@ -17,7 +17,7 @@ const FeaturedListing = () => {
                         </svg>
                     </div>
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Our Best Workers</h3>
-                    <p className="text-sm text-gray-500">Our workers are very hardworking and experienced</p>
+                    <p className="text-md text-gray-500">Our workers are very hardworking and experienced</p>
                 </div>
                 <div>
                     <div className="flex items-center justify-center w-8 h-8 mb-4 text-green-600 bg-green-100 rounded-full">
@@ -36,7 +36,7 @@ const FeaturedListing = () => {
                         </svg>
                     </div>
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Fast Car Searvice</h3>
-                    <p className="text-sm text-gray-500">We try to deliver as fast as possible, even within the expected date.</p>
+                    <p className="text-md text-gray-500">We try to deliver as fast as possible, even within the expected date.</p>
                 </div>
                 <div>
                     <div className="flex items-center justify-center w-8 h-8 mb-4 text-purple-600 bg-purple-100 rounded-full">
@@ -49,7 +49,7 @@ const FeaturedListing = () => {
                         </svg>
                     </div>
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">24X7 Service</h3>
-                    <p className="text-sm text-gray-500">We provide 24 hours service,   who needs to contact us will always get help.</p>
+                    <p className="text-md text-gray-500">We provide 24 hours service,   who needs to contact us will always get help.</p>
                 </div>
     
                 <div>
@@ -59,7 +59,7 @@ const FeaturedListing = () => {
                         </svg>
                     </div>
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Choose Best Materials</h3>
-                    <p className="text-sm text-gray-500">We select the best material from the company and then we build it ourselves</p>
+                    <p className="text-md text-gray-500">We select the best material from the company and then we build it ourselves</p>
                 </div>
                 <div>
                     <div className="flex items-center justify-center w-8 h-8 mb-4 text-purple-600 bg-purple-100 rounded-full">
@@ -70,7 +70,7 @@ const FeaturedListing = () => {
                         </svg>
                     </div>
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Secure Payment and Data Handling</h3>
-                    <p className="text-sm text-gray-500">We do take payment through different ways like PayPal, Visa Card, Debit Card, Credit Card</p>
+                    <p className="text-md text-gray-500">We do take payment through different ways like PayPal, Visa Card, Debit Card, Credit Card</p>
                 </div>
                 <div>
                     <div className="flex items-center justify-center w-8 h-8 mb-4 text-pink-600 bg-pink-100 rounded-full">
@@ -83,7 +83,7 @@ const FeaturedListing = () => {
                         </svg>
                     </div>
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Genuine Parts and Accessories</h3>
-                    <p className="text-sm text-gray-500">We don't use bad or damaged products, you will get all real products in our work</p>
+                    <p className="text-md text-gray-500">We don't use bad or damaged products, you will get all real products in our work</p>
                 </div>
                 <div>
                     <div className="flex items-center justify-center w-8 h-8 mb-4 text-red-600 bg-red-100 rounded-full">
@@ -94,7 +94,7 @@ const FeaturedListing = () => {
                         </svg>
                     </div>
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Maintenance and Repairs</h3>
-                    <p className="text-sm text-gray-500">Contact us if there is a warranty date, if any of our materials are damaged</p>
+                    <p className="text-md text-gray-500">Contact us if there is a warranty date, if any of our materials are damaged</p>
                 </div>
                 <div>
                     <div className="flex items-center justify-center w-8 h-8 mb-4 text-green-600 bg-green-100 rounded-full">
@@ -107,7 +107,7 @@ const FeaturedListing = () => {
                         </svg>
                     </div>
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Vehicle Customization</h3>
-                    <p className="text-sm text-gray-500">If you want to build the product by choosing the material of your choice, we can do that too</p>
+                    <p className="text-md  text-gray-500">If you want to build the product by choosing the material of your choice, we can do that too</p>
                 </div>
                 
             </div>
