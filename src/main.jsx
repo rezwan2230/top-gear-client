@@ -16,11 +16,14 @@ import SingleBrand from './components/SingleBrand';
 import DetailsById from './components/DetailsById';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Mycart from './components/Mycart';
+import Update from './components/Update';
+import ErrorPage from './components/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement : <ErrorPage></ErrorPage>,
     children : [
       {
         path : '/',
@@ -54,6 +57,11 @@ const router = createBrowserRouter([
         // element : <PrivateRoute><DetailsById></DetailsById></PrivateRoute>,
         element : <PrivateRoute><Mycart></Mycart></PrivateRoute>,
         loader : ()=> fetch('http://localhost:5000/mycart/products')
+      },
+      {
+        path : '/update/:id',
+        element : <Update></Update>,
+        loader : ({params})=> fetch(`http://localhost:5000/details/${params.id}`)
       },
     ]
   },
