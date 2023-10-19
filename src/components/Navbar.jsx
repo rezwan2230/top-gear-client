@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const navLink = <>
         <div className="flex gap-10 font-semibold text-lg text-white">
-            <NavLink><li><a>Home</a></li></NavLink>
+            <NavLink to='/'><li><a>Home</a></li></NavLink>
             {
                 user && <>
                     <div className="flex gap-10">
