@@ -14,6 +14,8 @@ import { ToastContainer } from 'react-toastify';
 import Registration from './components/Registration';
 import SingleBrand from './components/SingleBrand';
 import DetailsById from './components/DetailsById';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Mycart from './components/Mycart';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +25,7 @@ const router = createBrowserRouter([
       {
         path : '/',
         element : <Home></Home>,
-        loader : ()=> fetch('./public/brand.json')
+        loader : ()=> fetch('../public/brand.json')
       },
       {
         path : '/addproducts',
@@ -40,14 +42,19 @@ const router = createBrowserRouter([
       {
         path : '/:brandName',
         element : <SingleBrand></SingleBrand>,
-        loader : ({params})=> fetch(`http://localhost:5000/${params.brandName}`)
+        loader : ({params})=> fetch(`http://localhost:5000/${params.brandName}`),
       },
       {
-        path : '/:id',
-        element : <DetailsById></DetailsById>,
-        loader : ({params})=> fetch(`http://localhost:5000/${params.id}`)
-      }
-
+        path : '/details/:id',
+        element : <PrivateRoute><DetailsById></DetailsById></PrivateRoute>,
+        loader : ({params})=> fetch(`http://localhost:5000/details/${params.id}`)
+      },
+      {
+        path : '/mycart',
+        // element : <PrivateRoute><DetailsById></DetailsById></PrivateRoute>,
+        element : <PrivateRoute><Mycart></Mycart></PrivateRoute>,
+        loader : ()=> fetch('http://localhost:5000/mycart/products')
+      },
     ]
   },
 ]);

@@ -12,7 +12,7 @@ const SingleBrand = () => {
             <section className="px-4 py-24 mx-auto container">
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
                     {
-                        products.map(product => <SingleProduct key={product.map} product={product}></SingleProduct>)
+                        products.map(product => <SingleProduct key={product._id} product={product}></SingleProduct>)
                     }
                 </div>
             </section>

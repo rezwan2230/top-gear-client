@@ -1,9 +1,30 @@
 import { AiOutlineStar } from "react-icons/ai";
-import { PiCurrencyDollar } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const SingleProduct = ({ product }) => {
     const { _id, name, type, price, rating, photo, brandName, description } = product
+
+    const handleAddToCart = ()=>{
+        const myCartProduct = { name, type, price, rating, photo, brandName, description}
+        console.log(myCartProduct);
+        
+        fetch('http://localhost:5000/mycart',{
+            method : "POST",
+            headers : {
+                'content-type' : 'application/json'
+            },
+            body:JSON.stringify(myCartProduct)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data);
+            if(data.insertedId){
+                toast('Added to the my card section')
+            }
+        })
+    }
+
     return (
        <div className="card card-compact w-full bg-base-100 shadow-xl pb-2">
             <figure><img className="w-full h-[280px]" src={photo} alt="Shoes" /></figure>
@@ -17,7 +38,7 @@ const SingleProduct = ({ product }) => {
                 </div>
                 <div className="text-base">
                     {
-                        <p>{description.slice(0, 200)} <Link to={`/${_id}`}><span className="text-blue-700 underline ml-1 font-semibold">Read More...</span></Link></p>
+                        <p>{description.slice(0, 200)} <Link to={`/details/${_id}`}><span className="text-blue-700 underline ml-1 font-semibold">Read More...</span></Link></p>
                     }
                 </div>
 
@@ -31,7 +52,7 @@ const SingleProduct = ({ product }) => {
                 </div>
 
                 <div className="card-actions  w-full">
-                    <button className="btn btn-primary w-full">Add to Cart</button>
+                    <button onClick={()=>handleAddToCart()} className="btn btn-primary w-full">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -39,3 +60,4 @@ const SingleProduct = ({ product }) => {
 };
 
 export default SingleProduct;
+

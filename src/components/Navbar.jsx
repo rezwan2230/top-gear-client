@@ -11,18 +11,15 @@ const Navbar = () => {
     const navLink = <>
         <div className="flex gap-10 font-semibold text-lg text-white">
             <NavLink><li><a>Home</a></li></NavLink>
-            <NavLink to='/contact'><li><a>Contact</a></li></NavLink>
-            {/* {
+            {
                 user && <>
                     <div className="flex gap-10">
-                        <NavLink to='/blog'><li><a>Add products</a></li></NavLink>
-                        <NavLink to='/teammate'><li><a>Hudai</a></li></NavLink>
+                        <NavLink to='/addproducts'><li><a>Add products</a></li></NavLink>
+                        <NavLink to='/mycart'><li><a>My Cart</a></li></NavLink>
                     </div>
                 </>
-            } */}
-            <NavLink to='/addproducts'><li><a>Add products</a></li></NavLink>
-            <NavLink to='/teammate'><li><a>Hudai</a></li></NavLink>
-            <NavLink to='/register' ><li><a>Register</a></li></NavLink>
+            }
+
             <NavLink to='/login' ><li><a>Login</a></li></NavLink>
         </div>
     </>
@@ -56,7 +53,7 @@ const Navbar = () => {
 
             <div className="navbar-end">
                 {
-                    user && <div className="text-lg font-semibold mr-2">{user?.displayName}</div>
+                    user && <div className="text-lg font-semibold mr-2 text-white">{user?.displayName}</div>
                 }
                 <div className="flex-none">
                     <div className="dropdown dropdown-end">

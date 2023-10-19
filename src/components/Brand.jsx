@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Brand = ({ brand }) => {
     const { brand_name, img } = brand
-    
+
     return (
         <Link to={`/${brand_name}`}><div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
@@ -20,3 +20,4 @@ const Brand = ({ brand }) => {
 };
 
 export default Brand;
+
