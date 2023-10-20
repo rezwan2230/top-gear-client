@@ -38,7 +38,7 @@ const MyCartDesign = ({ product, products, setProducts }) => {
     return (
         <div>
             <div className="container mx-auto ">
-                <div className="relative flex h-[250px] w-full max-w-[48rem] flex-row rounded-lg  bg-clip-border text-gray-700 shadow-md" style={{ backgroundColor: 'gray', color: 'black' }}>
+                <div className="relative flex  h-[250px] w-full max-w-[48rem]  rounded-lg  bg-clip-border text-gray-700 shadow-md" style={{ backgroundColor: 'gray', color: 'black' }}>
 
                     <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
                         <img
@@ -47,7 +47,7 @@ const MyCartDesign = ({ product, products, setProducts }) => {
                             className="h-[300px] w-full object-cover"
                         />
                     </div>
-                    <div className="p-6 flex  justify-center items-center">
+                    <div className="p-6 flex justify-center items-center">
                         <div className=''>
                             <span className="mb-3 mt-4 rounded-lg max-w-fit block font-sans text-base font-semibold uppercase leading-relaxed " style={{ backgroundColor: "gray", categoryBgColor: "gray" }}>
                                 {brandName}

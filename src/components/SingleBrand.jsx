@@ -16,7 +16,7 @@ const SingleBrand = () => {
                     <div className="flex items-center mx-auto container justify-center md:justify-between py-2">
                         <div className="md:text-2xl lg:text-5xl absolute bg-slate-500 p-2">
                             <span className="">Get up to 50% off your first order + free shipping,&nbsp;</span>
-                            <a href="#" rel="noopener noreferrer" className="underline "><Link to='/'><span>sign up</span></Link></a> today!
+                            <a href="#" rel="noopener noreferrer" className="underline "><Link to='/register'><span>sign up</span></Link></a> today!
                         </div>
                         <a href="#" rel="noopener noreferrer" className="items-center gap-2 hidden md:flex">
                             <svg role="img" viewBox="0 0 22 22" className="fill-current h-4 w-4">
@@ -29,7 +29,7 @@ const SingleBrand = () => {
             </div>
 
             <section className="px-4 md:px-6 py-10 md:pt-24 mx-auto lg:container">
-                <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:mt-10">
+                <div className="grid grid-cols-1 gap-4 lg:gap-12 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:mt-10">
                     {
                         products.map(product => <SingleProduct key={product._id} product={product}></SingleProduct>)
                     }

@@ -3,11 +3,11 @@ const FeaturedListing = () => {
     return (
 
         <section className="px-4 py-20 mx-auto max-w-7xl">
-            <h2 className="mb-1 text-4xl font-semibold leading-tight text-center">We Provide Best Services</h2>
+            <h2 className="mb-1 -mt-10 md:-mt-0 text-3xl md:text-4xl font-semibold leading-tight text-center">We Provide Best Services</h2>
             <p className="mb-16 text-lg text-gray-500 text-center">We Provide Best Services signifies our commitment to delivering top-notch</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 lg:gap-x-24 gap-y-20">
-                <div>
-                    <div className="flex items-center justify-center w-8 h-8 mb-4 text-yellow-600 bg-yellow-100 rounded-full">
+                <div className="text-center lg:text-left">
+                    <div className="mx-auto lg:mx-0 flex items-center justify-center w-8 h-8 mb-4 text-yellow-600 bg-yellow-100 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5" aria-hidden="true">
                             <path
                                 
@@ -16,11 +16,11 @@ const FeaturedListing = () => {
                             />
                         </svg>
                     </div>
-                    <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Our Best Workers</h3>
+                    <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900 ">Our Best Workers</h3>
                     <p className="text-md text-gray-500">Our workers are very hardworking and experienced</p>
                 </div>
-                <div>
-                    <div className="flex items-center justify-center w-8 h-8 mb-4 text-green-600 bg-green-100 rounded-full">
+                <div className="text-center lg:text-left">
+                    <div className="mx-auto lg:mx-0 flex items-center justify-center w-8 h-8 mb-4 text-green-600 bg-green-100 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5" aria-hidden="true">
                             <path
                                 
@@ -38,8 +38,8 @@ const FeaturedListing = () => {
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Fast Car Searvice</h3>
                     <p className="text-md text-gray-500">We try to deliver as fast as possible, even within the expected date.</p>
                 </div>
-                <div>
-                    <div className="flex items-center justify-center w-8 h-8 mb-4 text-purple-600 bg-purple-100 rounded-full">
+                <div className="text-center lg:text-left">
+                    <div className="mx-auto lg:mx-0 flex items-center justify-center w-8 h-8 mb-4 text-purple-600 bg-purple-100 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5" aria-hidden="true">
                             <path
                                 
@@ -52,8 +52,8 @@ const FeaturedListing = () => {
                     <p className="text-md text-gray-500">We provide 24 hours service,   who needs to contact us will always get help.</p>
                 </div>
     
-                <div>
-                    <div className="flex items-center justify-center w-8 h-8 mb-4 text-indigo-600 bg-indigo-100 rounded-full">
+                <div className="text-center lg:text-left">
+                    <div className="mx-auto lg:mx-0 flex items-center justify-center w-8 h-8 mb-4 text-indigo-600 bg-indigo-100 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5" aria-hidden="true">
                             <path  d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"  />
                         </svg>
@@ -61,8 +61,8 @@ const FeaturedListing = () => {
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Choose Best Materials</h3>
                     <p className="text-md text-gray-500">We select the best material from the company and then we build it ourselves</p>
                 </div>
-                <div>
-                    <div className="flex items-center justify-center w-8 h-8 mb-4 text-purple-600 bg-purple-100 rounded-full">
+                <div className="text-center lg:text-left">
+                    <div className="mx-auto lg:mx-0 flex items-center justify-center w-8 h-8 mb-4 text-purple-600 bg-purple-100 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5" aria-hidden="true">
                             <path
                                 d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"
@@ -72,8 +72,8 @@ const FeaturedListing = () => {
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Secure Payment and Data Handling</h3>
                     <p className="text-md text-gray-500">We do take payment through different ways like PayPal, Visa Card, Debit Card, Credit Card</p>
                 </div>
-                <div>
-                    <div className="flex items-center justify-center w-8 h-8 mb-4 text-pink-600 bg-pink-100 rounded-full">
+                <div className="text-center lg:text-left">
+                    <div className="mx-auto lg:mx-0 flex items-center justify-center w-8 h-8 mb-4 text-pink-600 bg-pink-100 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5" aria-hidden="true">
                             <path
                                
@@ -85,8 +85,8 @@ const FeaturedListing = () => {
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Genuine Parts and Accessories</h3>
                     <p className="text-md text-gray-500">We dont use bad or damaged products, you will get all real products in our work</p>
                 </div>
-                <div>
-                    <div className="flex items-center justify-center w-8 h-8 mb-4 text-red-600 bg-red-100 rounded-full">
+                <div className="text-center lg:text-left">
+                    <div className="mx-auto lg:mx-0 flex items-center justify-center w-8 h-8 mb-4 text-red-600 bg-red-100 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5" aria-hidden="true">
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
@@ -96,8 +96,8 @@ const FeaturedListing = () => {
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Maintenance and Repairs</h3>
                     <p className="text-md text-gray-500">Contact us if there is a warranty date, if any of our materials are damaged</p>
                 </div>
-                <div>
-                    <div className="flex items-center justify-center w-8 h-8 mb-4 text-green-600 bg-green-100 rounded-full">
+                <div className="text-center lg:text-left">
+                    <div className="mx-auto lg:mx-0 flex items-center justify-center w-8 h-8 mb-4 text-green-600 bg-green-100 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5" aria-hidden="true">
                             <path
                                
