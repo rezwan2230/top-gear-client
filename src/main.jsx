@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path : '/',
         element : <Home></Home>,
-        loader : ()=> fetch('../public/brand.json')
+        loader : ()=> fetch('/brand.json')
       },
       {
         path : '/addproducts',
@@ -45,23 +45,22 @@ const router = createBrowserRouter([
       {
         path : '/:brandName',
         element : <SingleBrand></SingleBrand>,
-        loader : ({params})=> fetch(`http://localhost:5000/${params.brandName}`),
+        loader : ({params})=> fetch(`https://top-gear-99euiwgyy-rezwanul-haques-projects.vercel.app/${params.brandName}`),
       },
       {
         path : '/details/:id',
         element : <PrivateRoute><DetailsById></DetailsById></PrivateRoute>,
-        loader : ({params})=> fetch(`http://localhost:5000/details/${params.id}`)
+        loader : ({params})=> fetch(`https://top-gear-99euiwgyy-rezwanul-haques-projects.vercel.app/details/${params.id}`)
       },
       {
         path : '/mycart',
-        // element : <PrivateRoute><DetailsById></DetailsById></PrivateRoute>,
         element : <PrivateRoute><Mycart></Mycart></PrivateRoute>,
-        loader : ()=> fetch('http://localhost:5000/mycart/products')
+        loader : ()=> fetch('https://top-gear-99euiwgyy-rezwanul-haques-projects.vercel.app/mycart/products')
       },
       {
         path : '/update/:id',
         element : <PrivateRoute><Update></Update></PrivateRoute>,
-        loader : ({params})=> fetch(`http://localhost:5000/details/${params.id}`)
+        loader : ({params})=> fetch(`https://top-gear-99euiwgyy-rezwanul-haques-projects.vercel.app/details/${params.id}`)
       },
     ]
   },

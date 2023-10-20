@@ -9,7 +9,7 @@ const AllBrands = () => {
             <hr className="w-20 md:w-48 mx-auto mt-4 border-[1px] border-black" />
             <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 mx-3 md:mx-20 my-10">
                 {
-                    brands.map(brand =><Brand key={brand.id} brand={brand}></Brand>)
+                    brands?.map(brand =><Brand key={brand.id} brand={brand}></Brand>)
                 }
             </div>
         </div>

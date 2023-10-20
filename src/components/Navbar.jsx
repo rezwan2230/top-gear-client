@@ -20,7 +20,6 @@ const Navbar = () => {
                     </div>
                 </>
             }
-
             <NavLink to='/login' ><li><a>Login</a></li></NavLink>
         </div>
     </>

@@ -15,7 +15,7 @@ const AddProducts = () => {
         const newProduct = { name, type, price,  rating, photo,  brandName, description}
         console.log(newProduct);
 
-        fetch('http://localhost:5000/allproducts',{
+        fetch('https://top-gear-99euiwgyy-rezwanul-haques-projects.vercel.app/allproducts',{
             method: "POST",
             headers : {
                 'content-type' : 'application/json'

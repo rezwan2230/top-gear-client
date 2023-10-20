@@ -1,8 +1,6 @@
 import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
-import { ToastContainer, toast } from 'react-toastify';
-import Swal from 'sweetalert2'
 import 'react-toastify/dist/ReactToastify.css';
 
 export const AuthContext = createContext(null)

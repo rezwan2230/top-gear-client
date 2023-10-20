@@ -1,5 +1,4 @@
 import { FcGoogle } from "react-icons/fc";
-import { BsGithub } from "react-icons/bs";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
@@ -8,7 +7,7 @@ import { toast } from "react-toastify";
 const Login = () => {
 
     const navigate = useNavigate()
-    const { signIn, signInWithGoogle, signInWithGitHub} = useContext(AuthContext)
+    const { signIn, signInWithGoogle} = useContext(AuthContext)
     const location = useLocation()
 
 
@@ -38,10 +37,7 @@ const Login = () => {
         signInWithGoogle()
         navigate(location?.state ? location.state : '/')
     }
-    const handleGithubSignIn = ()=>{
-        signInWithGitHub()
-        navigate(location?.state ? location.state : '/')
-    }
+  
 
     return (
         <div className="w-full absolute -mt-[88px] h-screen font-sans bg-cover" style={{ backgroundImage: 'url(https://i.ibb.co/1Myc997/pexels-kamshotthat-7465827.jpg)', backgroundSize:'cover',  backgroundPosition: 'center', objectFit:"top left" }}>
@@ -75,7 +71,6 @@ const Login = () => {
 
                                 <div className="flex justify-center items-center gap-6 mt-2">
                                     <FcGoogle onClick={handleGoogleSignIn} className="text-3xl"></FcGoogle>
-                                    <BsGithub onClick={handleGithubSignIn} className="text-[26px] text-white"></BsGithub>
                                 </div>
                             </div>
 

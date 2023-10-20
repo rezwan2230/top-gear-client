@@ -8,13 +8,13 @@ const Testimonial = () => {
                 </h1>
 
                 <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
-                Displays testimonials and feedback from customers, offering insights into their experiences and satisfaction levels. These testimonials build trust and highlight the business's positive aspects for potential customers.
+                Displays testimonials and feedback from customers, offering insights into their experiences and satisfaction levels. These testimonials build trust and highlight the business positive aspects for potential customers.
                 </p>
 
                 <section className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-3">
                     <div className="p-8 border rounded-lg dark:border-gray-700">
                         <p className="leading-loose text-gray-500 dark:text-gray-400">
-                            “People are drawn to us because of our unwavering commitment to excellence, personalized service, and trust we've cultivated through consistent reliability, innovation, and shared values. We're their top choice.”.
+                            “People are drawn to us because of our unwavering commitment to excellence, personalized service, and trust we have cultivated through consistent reliability, innovation, and shared values. We are their top choice.”.
                         </p>
 
                         <div className="flex items-center mt-8 -mx-2">

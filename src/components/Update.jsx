@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLoaderData, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
@@ -24,7 +23,7 @@ const Update = () => {
         const updateProduct = { name, type, price, rating, photo,  brandName, description}
         console.log(updateProduct);
 
-        fetch(`http://localhost:5000/details/${_id}`,{
+        fetch(`https://top-gear-99euiwgyy-rezwanul-haques-projects.vercel.app/details/${_id}`,{
             method: "PUT",
             headers : {
                 'content-type' : 'application/json'

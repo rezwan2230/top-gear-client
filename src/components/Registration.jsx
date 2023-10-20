@@ -1,5 +1,4 @@
 import { FcGoogle } from "react-icons/fc";
-import { BsGithub } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { toast } from "react-toastify";
@@ -9,7 +8,7 @@ const Register = () => {
 
     const navigate = useNavigate()
 
-    const {createUser, updateUser, signInWithGoogle, signInWithGitHub} = useContext(AuthContext)
+    const {createUser, updateUser, signInWithGoogle} = useContext(AuthContext)
 
     const handleRegister = (e)=>{
         e.preventDefault()   
@@ -61,10 +60,7 @@ const Register = () => {
         signInWithGoogle()
         navigate('/')
     }
-    const handleGithubSignIn = ()=>{
-        signInWithGitHub()
-        navigate('/')
-    }
+    
 
 
     return (
@@ -114,12 +110,6 @@ const Register = () => {
                                             Continue with Google    
                                         </button>
                                     </div>  
-                                    <div className="mb-4 px-10 flex justify-center items-center w-full">
-                                        <button onClick={handleGithubSignIn} className="btn btn-outline rounded-3xl flex normal-case w-[300px] text-white">
-                                            <BsGithub className="text-2xl"></BsGithub>
-                                            Continue with GitHub
-                                        </button>
-                                    </div>
                                 </div>  
                             </div>
 

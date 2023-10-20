@@ -1,30 +1,39 @@
+import PropTypes from 'prop-types';
 import { AiOutlineStar } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AiFillEdit } from "react-icons/ai";
 import { BiSolidDetail } from "react-icons/bi";
+import { useContext } from "react";
+import { AuthContext } from "../provider/AuthProvider";
 
 const SingleProduct = ({ product }) => {
+    const { user } = useContext(AuthContext)
+    const navigate = useNavigate()
     const { _id, name, type, price, rating, photo, brandName, description } = product
 
     const handleAddToCart = () => {
         const myCartProduct = { name, type, price, rating, photo, brandName, description }
-        console.log(myCartProduct);
 
-        fetch('http://localhost:5000/mycart', {
-            method: "POST",
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(myCartProduct)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                if (data.insertedId) {
-                    toast('Added to the my card section')
-                }
+        if (user) {
+            fetch('https://top-gear-99euiwgyy-rezwanul-haques-projects.vercel.app/mycart', {
+                method: "POST",
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(myCartProduct)
             })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    if (data.insertedId) {  
+                        toast('Add this product to My card Section')
+                    }
+                })
+        }
+        else {
+            navigate('/login')
+        }
     }
 
     return (
@@ -41,7 +50,7 @@ const SingleProduct = ({ product }) => {
                 <div className="text-base flex justify-center items-center">
                     <div className="pr-5">
                         {
-                            <p>{description.slice(0, 200)}..</p>
+                            <p>{description?.slice(0, 200)}..</p>
                         }
                     </div>
                     <div className="flex flex-col gap-7">
@@ -65,6 +74,10 @@ const SingleProduct = ({ product }) => {
             </div>
         </div>
     );
+};
+
+SingleProduct.propTypes = {
+    product: PropTypes.object
 };
 
 export default SingleProduct;

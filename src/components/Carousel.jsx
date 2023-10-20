@@ -6,7 +6,6 @@ const Carousel = () => {
             <div id="slide1" className="carousel-item relative w-full">
                 <img src="https://i.ibb.co/N7gqHyn/lamborghini.jpg" className="w-full rounded-lg bg-center h-[280px] md:h-[500px] lg:h-[700px]" />
 
-
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" className="btn btn-circle">❮</a>
                     <a href="#slide2" className="btn btn-circle">❯</a>
@@ -33,11 +32,6 @@ const Carousel = () => {
                     <a href="#slide1" className="btn btn-circle">❯</a>
                 </div>
             </div>
-
-
-            
-
-
         </div>
     );
 };

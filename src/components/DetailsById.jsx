@@ -8,7 +8,7 @@ const DetailsById = () => {
         const myCartProduct = { name, type, price, rating, photo, brandName, description }
         console.log(myCartProduct);
 
-        fetch('http://localhost:5000/mycart', {
+        fetch('https://top-gear-99euiwgyy-rezwanul-haques-projects.vercel.app/mycart', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -26,14 +26,14 @@ const DetailsById = () => {
 
     return (
         <section className="text-gray-600 mb-10">
-            <div className="container  mx-auto">
+            <div className="container mx-auto">
                 <div className=" mx-auto ">
-                    <img alt="ecommerce" className="w-full  h-[700px] rounded -mt-[89px]" src={photo} />
-                    <div className="w-full  lg:py-6 mt-6 lg:mt-0 ">
-                        <h2 className="text-lg py-2 title-font text-gray-500 tracking-widest">BRAND NAME : {brandName}</h2>
+                    <img alt="ecommerce" className="w-full  lg:h-[700px] rounded -mt-[89px]" src={photo} />
+                    <div className="w-full px-3 lg:px-0 lg:py-6 mt-6 lg:mt-0 ">
+                        <h2 className="md:text-lg py-2 title-font text-gray-500 tracking-widest">BRAND NAME : {brandName}</h2>
                         
                         <div className="flex items-center justify-between">
-                            <h1 className="text-gray-900 text-3xl title-font font-medium mb-1 my-2">{name}</h1>
+                            <h1 className="text-gray-900 text-2xl md:text-3xl title-font font-medium mb-1 my-2">{name}</h1>
                             <Link to={`/update/${_id}`}><button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Edit</button></Link>
                         </div>
 

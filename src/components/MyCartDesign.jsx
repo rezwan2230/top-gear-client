@@ -3,7 +3,7 @@ import { MdDelete } from "react-icons/md";
 import Swal from 'sweetalert2';
 
 const MyCartDesign = ({ product, products, setProducts }) => {
-    const { _id, name, type, price, rating, photo, brandName, description } = product
+    const { _id, name, price, photo, brandName, description } = product
 
     const handleDelete = (_id) => {
         Swal.fire({
@@ -16,7 +16,7 @@ const MyCartDesign = ({ product, products, setProducts }) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/mycart/${_id}`, {
+                fetch(`https://top-gear-99euiwgyy-rezwanul-haques-projects.vercel.app/mycart/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -28,7 +28,7 @@ const MyCartDesign = ({ product, products, setProducts }) => {
                                 'Your file has been deleted.',
                                 'success'
                               )
-                            const remaining = products?.filter(product => product._id !== _id)
+                            const remaining = products.filter(product => product._id !== _id)
                             setProducts(remaining)
                     }
                 })
@@ -75,10 +75,7 @@ const MyCartDesign = ({ product, products, setProducts }) => {
 };
 
 MyCartDesign.propTypes = {
-    donate: PropTypes.object
+    product: PropTypes.object
 };
+
 export default MyCartDesign;
-
-
-
-
