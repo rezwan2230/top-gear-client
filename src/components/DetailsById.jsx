@@ -1,8 +1,8 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { toast } from "react-toastify";
 const DetailsById = () => {
     const product = useLoaderData();
-    const { _id, name, type, price, rating, photo, brandName, description } = product
+    const {_id, name, type, price, rating, photo, brandName, description } = product
 
     const handleAddToCart = () => {
         const myCartProduct = { name, type, price, rating, photo, brandName, description }
@@ -34,7 +34,7 @@ const DetailsById = () => {
                         
                         <div className="flex items-center justify-between">
                             <h1 className="text-gray-900 text-3xl title-font font-medium mb-1 my-2">{name}</h1>
-                            <button>edit</button>
+                            <Link to={`/update/${_id}`}><button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Edit</button></Link>
                         </div>
 
                         <div className="flex mb-4 mt-2">

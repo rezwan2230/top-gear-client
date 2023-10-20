@@ -4,7 +4,7 @@ const FeaturedListing = () => {
 
         <section className="px-4 py-20 mx-auto max-w-7xl">
             <h2 className="mb-1 text-4xl font-semibold leading-tight text-center">We Provide Best Services</h2>
-            <p className="mb-16 text-lg text-gray-500 text-center">We Provide Best Services" signifies our commitment to delivering top-notch</p>
+            <p className="mb-16 text-lg text-gray-500 text-center">We Provide Best Services signifies our commitment to delivering top-notch</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 lg:gap-x-24 gap-y-20">
                 <div>
                     <div className="flex items-center justify-center w-8 h-8 mb-4 text-yellow-600 bg-yellow-100 rounded-full">
@@ -83,7 +83,7 @@ const FeaturedListing = () => {
                         </svg>
                     </div>
                     <h3 className="mb-2 text-xl font-semibold leading-tight text-gray-900">Genuine Parts and Accessories</h3>
-                    <p className="text-md text-gray-500">We don't use bad or damaged products, you will get all real products in our work</p>
+                    <p className="text-md text-gray-500">We dont use bad or damaged products, you will get all real products in our work</p>
                 </div>
                 <div>
                     <div className="flex items-center justify-center w-8 h-8 mb-4 text-red-600 bg-red-100 rounded-full">
