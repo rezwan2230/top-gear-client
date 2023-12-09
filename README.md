@@ -1,8 +1,10 @@
-# React + Vite
+## This website is mainly for selling cars
+- User can registration here and see some cars.
+- Home page has some category type carts.
+- If user click any category then this category type cars will be shown.
+- user can see full details of any car if he login this site.
+- by choosing any car user can add this car on his favourites section.
+- any time he can delete his favourite items.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Link :
+- https://top-gear-61bd0.web.app/
